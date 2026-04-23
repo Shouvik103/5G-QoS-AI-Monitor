@@ -1,0 +1,46 @@
+{
+  "sessions": [
+    {
+      "User_ID": 0,
+      "window_start": "2026-04-23T12:53:07.590744972",
+      "Application_Type": "WiFi/Other",
+      "Latency_ms": 23.65,
+      "jitter_ms": 91.52,
+      "Signal_Strength_dBm": -65.33,
+      "throughput_mbps": 5.2815,
+      "Resource_Allocation_pct": 100.0,
+      "loss_rate": 0.2555,
+      "burstiness": 45.352,
+      "BW_Gap": -3.9363,
+      "Anomaly_Score": 0.0,
+      "QoS_Status": "Normal"
+    },
+    {
+      "User_ID": 1,
+      "window_start": "2026-04-23T12:53:37.590744972",
+      "Application_Type": "WiFi/Other",
+      "Latency_ms": 8.72,
+      "jitter_ms": 49.96,
+      "Signal_Strength_dBm": -60.97,
+      "throughput_mbps": 13.154,
+      "Resource_Allocation_pct": 0.0,
+      "loss_rate": 0.1829,
+      "burstiness": 136.443,
+      "BW_Gap": 3.9363,
+      "Anomaly_Score": 0.0,
+      "QoS_Status": "Normal"
+    }
+  ],
+  "summary": {
+    "total_sessions": 2,
+    "normal": 2,
+    "degraded": 0,
+    "unusual": 0,
+    "degradation_rate_pct": 0.0,
+    "avg_latency_ms": 16.18,
+    "avg_signal_dbm": -63.15,
+    "avg_resource_alloc": 50.0,
+    "last_updated": "2026-04-23T18:24:37.824164"
+  },
+  "alerts": []
+}
