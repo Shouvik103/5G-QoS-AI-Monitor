@@ -28,9 +28,9 @@ This system simulates and monitors 5G network telemetry parameters — **Latency
 ## 🏗️ Architecture
 
 ```
-┌─────────────────┐     POST /predict_qos     ┌──────────────────┐
-│   Streamlit UI  │ ──────────────────────────▶│  FastAPI Backend  │
-│  (dashboard.py) │◀────────────────────────── │    (main.py)      │
+┌─────────────────┐     POST /predict_qos      ┌──────────────────┐
+│   Streamlit UI  │ ──────────────────────────▶│  FastAPI Backend │
+│  (dashboard.py) │◀────────────────────────── │    (main.py)     │
 │                 │     JSON Response          │                  │
 │  • Live Charts  │                            │  • ML Inference  │
 │  • Metrics      │                            │  • GBClassifier  │
@@ -45,6 +45,7 @@ This system simulates and monitors 5G network telemetry parameters — **Latency
 ```
 .
 ├── README.md
+├── requirements.txt                # Python dependencies
 ├── .gitignore
 ├── .venv/                        # Python virtual environment
 ├── src/
@@ -85,7 +86,7 @@ python -m venv .venv
 source .venv/bin/activate  # On macOS/Linux
 
 # Install dependencies
-pip install fastapi uvicorn streamlit pandas scikit-learn joblib altair requests pydantic scapy numpy
+pip install -r requirements.txt
 ```
 
 ### Run the Application
