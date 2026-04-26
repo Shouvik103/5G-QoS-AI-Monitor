@@ -13,14 +13,14 @@ Output JSON schema:
   summary    : aggregate stats (for header cards)
   alerts     : degraded windows sorted worst-first
 
-Usage:
+Usage (run from project root):
   # Offline (pcap file)
-  python backend_5g_qos.py --pcap longrun.pcap --out output.json
-  python backend_5g_qos.py --pcap longrun.pcap --out output.json --serve
+  python src/backend_5g_qos.py --pcap data/longrun.pcap --out output/qos_output.json
+  python src/backend_5g_qos.py --pcap data/longrun.pcap --out output/qos_output.json --serve
 
   # Live capture (needs root / sudo)
-  sudo python backend_5g_qos.py --live --iface eth0 --serve
-  sudo python backend_5g_qos.py --live --iface wlan0 --duration 300 --serve
+  sudo python src/backend_5g_qos.py --live --iface eth0 --serve
+  sudo python src/backend_5g_qos.py --live --iface wlan0 --duration 300 --serve
 
 Dependencies:
   pip install scikit-learn pandas numpy scapy
